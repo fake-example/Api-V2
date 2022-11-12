@@ -1,4 +1,4 @@
-class Api::V1::PokemonsController < ApiController
+class Api::V1::PokemonsController < ApplicationController
   # before_action :doorkeeper_authorize!
   skip_before_action :verify_authenticity_token
   before_action :set_pokemon, only: %i[ show edit update destroy ]
